@@ -81,7 +81,7 @@
 <p id="forecast-intro">19–24 November 2026 · Jordan local time</p>
 <div id="weather-cities" class="days" aria-label="Choose a city"></div><div id="forecast" aria-live="polite"></div><p class="source">Forecast data from <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>.</p></article>
 <article class="travel-card"><h3>Currency converter</h3><p>US dollar · Jordanian dinar · Libyan dinar</p>
-<div class="converter"><label>Amount<input id="amount" type="number" value="100" min="0" step="any" inputmode="decimal"></label><label>From<select id="from"><option>USD</option><option>JOD</option><option>LYD</option></select></label><button id="swap" class="button secondary" type="button" aria-label="Swap currencies">⇄</button><label>To<select id="to"><option>JOD</option><option>USD</option><option>LYD</option></select></label></div>
+<div class="converter"><label>Amount<input id="amount" type="number" value="100" min="0" step="any" inputmode="decimal"></label><label>From<select id="from" aria-label="From currency"><option>USD</option><option>JOD</option><option>LYD</option></select></label><button id="swap" class="button secondary" type="button" aria-label="Swap currencies">⇄</button><label>To<select id="to" aria-label="To currency"><option>JOD</option><option>USD</option><option>LYD</option></select></label></div>
 <output id="conversion" aria-live="polite"></output>
 <p class="source" id="live-rates" aria-live="polite">Checking for updated exchange rates…</p>
 <p class="source">Official reference rates. <a href="https://www.cbj.gov.jo/en/Pages/foreignexchangerates" target="_blank" rel="noopener">Central Bank of Jordan</a> (USD midpoint) and <a href="https://cbl.gov.ly/en/currency-exchange-rates/" target="_blank" rel="noopener">Central Bank of Libya</a> (17 Nov 2026). Bank and cash rates may vary.</p></article>
@@ -190,7 +190,7 @@ async function loadAgenda() {
       [
         "17:30",
         "18:45",
-        "Transfer to hotel / Benghazi group                              \u0013\u0012\u0018\u0017\u0016\u0015\u0014"
+        "Transfer to hotel / Benghazi group"
       ],
       [
         "20:15",
@@ -266,7 +266,7 @@ async function loadAgenda() {
       [
         "18:30",
         "19:00",
-        "Transfer to dinner                    \u0013\u001b\u0010\u0018"
+        "Transfer to dinner"
       ],
       [
         "19:00",
@@ -322,7 +322,7 @@ async function loadAgenda() {
       [
         "19:15",
         "20:45",
-        "Free time                              \u0013\u0013\u000e "
+        "Free time"
       ],
       [
         "20:45",
@@ -641,7 +641,7 @@ async function loadVenues() {
     "name": "Petra",
     "category": "Destinations",
     "city": "Petra",
-    "detail": "Guided visit · 22 November",
+    "detail": "Visit · 22 November",
     "source": "https://international.visitjordan.com/wheretogo/petra",
     "image": "https://international.visitjordan.com/uploads/attractions/b2642b8f-1ff1-4b5c-9c80-0dfb8ad2085b.webp"
   },
